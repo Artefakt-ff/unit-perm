@@ -1,0 +1,78 @@
+//--------------------variables--------------------
+$color-primary: rgba(0, 0, 0, 1)
+$color-primary-75: rgba(0, 0, 0, 0.75)
+$color-primary-50: rgba(0, 0, 0, 0.5)
+
+$color-secondary: rgba(0, 0, 0, 1)
+$color-secondary-75: rgba(0, 0, 0, 0.75)
+$color-secondary-50: rgba(0, 0, 0, 0.5)
+
+$color-passive: rgba(0, 0, 0, 1)
+$color-passive-75: rgba(0, 0, 0, 0.75)
+$color-passive-50: rgba(0, 0, 0, 0.5)
+
+
+//-----------------common-classes------------------
+
+.bg-primary
+  background-color: $color-primary
+
+.bg-primary-75
+  background-color: $color-primary-75
+
+.bg-primary-50
+  background-color: $color-primary-50
+
+.bg-secondary
+  background-color: $color-secondary
+
+.bg-secondary-75
+  background-color: $color-secondary-75
+
+.bg-secondary-50
+  background-color: $color-secondary-50
+
+.bg-passive
+  background-color: $color-passive
+
+.bg-passive-75
+  background-color: $color-passive-75
+
+.bg-passive-50
+  background-color: $color-passive-50
+
+.text-primary
+  color: $color-primary
+
+.text-secondary
+  color: $color-secondary
+
+.text-passive
+  color: $color-passive
+
+
+//--------------------mixins-----------------------
+@mixin transition($seconds)
+  transition: $seconds
+  -moz-transition: $seconds
+  -webkit-transition: $seconds
+  -o-transition: $seconds
+
+@mixin common-shadow()
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75)
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75)
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75)
+
+@mixin absolute-center
+  position: absolute
+  margin: auto
+  right: 0
+  left: 0
+  bottom: 0
+  top: 0
+
+@mixin flex-center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center

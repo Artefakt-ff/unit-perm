@@ -1,0 +1,49 @@
+.bg-primary {
+  background-color: black;
+}
+
+.bg-primary-75 {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.bg-primary-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-secondary {
+  background-color: black;
+}
+
+.bg-secondary-75 {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.bg-secondary-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-passive {
+  background-color: black;
+}
+
+.bg-passive-75 {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.bg-passive-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-primary {
+  color: black;
+}
+
+.text-secondary {
+  color: black;
+}
+
+.text-passive {
+  color: black;
+}
+
+/*# sourceMappingURL=global.css.map */
