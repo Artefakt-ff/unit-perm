@@ -1,0 +1,54 @@
+@import "global"
+
+.partners__left
+  padding: 40px 0
+  +bg-primary
+  +text-passive
+
+  .container
+    width: 80%
+
+.partners__right
+  +flex-center
+  justify-content: flex-end
+  padding: 0
+
+  .hr
+    &:first-of-type
+      margin-bottom: 20px
+
+    &:last-of-type
+      margin: 20px 0 0 0
+    +bg-primary
+    height: 10px
+
+.partners__logos
+  width: 100%
+  height: 50%
+  display: flex
+  align-content: space-between
+
+.partners__logo
+  width: 20%
+  height: 100%
+  margin: 0 10px
+
+
+.partners__logo:nth-of-type(1)
+  background: url("../images/lukoil.png") center no-repeat
+  background-size: contain
+
+
+.partners__logo:nth-of-type(2)
+  background: url("../images/tatneft.png") center no-repeat
+  background-size: contain
+
+
+.partners__logo:nth-of-type(3)
+  background: url("../images/rosneft.png") center no-repeat
+  background-size: contain
+
+
+.partners__logo:nth-of-type(4)
+  background: url("../images/tms.png") center no-repeat
+  background-size: contain

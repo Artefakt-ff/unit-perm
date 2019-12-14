@@ -1,0 +1,29 @@
+@import "global"
+.footer
+  +common-shadow
+  +bg-passive
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+
+.footer .col-4
+  display: flex
+  justify-content: center
+  align-items: center
+  &:last-of-type
+    text-align: center
+
+
+.footer__menu
+  display: flex
+
+.footer__menu-item
+  margin: 0 10px
+
+.footer__logo
+  margin: 20px 0
+  background: url("../images/logo-full.png") no-repeat center
+  background-size: contain
+  height: 50px
+  width: 100%

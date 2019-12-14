@@ -1,54 +1,66 @@
 //--------------------variables--------------------
-$color-primary: rgba(0, 0, 0, 1)
-$color-primary-75: rgba(0, 0, 0, 0.75)
-$color-primary-50: rgba(0, 0, 0, 0.5)
+$color-primary: rgb(21, 24, 65)
+$color-primary-90: rgba(21, 24, 65, 0.9)
+$color-primary-75: rgba(21, 24, 65, 0.75)
+$color-primary-50: rgba(21, 24, 65, 0.5)
 
-$color-secondary: rgba(0, 0, 0, 1)
-$color-secondary-75: rgba(0, 0, 0, 0.75)
-$color-secondary-50: rgba(0, 0, 0, 0.5)
+$color-secondary: rgba(255, 143, 2, 1)
+$color-secondary-75: rgba(255, 143, 2, 0.75)
+$color-secondary-50: rgba(255, 143, 2, 0.5)
 
-$color-passive: rgba(0, 0, 0, 1)
-$color-passive-75: rgba(0, 0, 0, 0.75)
-$color-passive-50: rgba(0, 0, 0, 0.5)
+$color-passive: rgba(244, 247, 247, 1)
+$color-passive-90: rgba(244, 247, 247, 0.9)
+$color-passive-75: rgba(244, 247, 247, 0.75)
+$color-passive-50: rgba(244, 247, 247, 0.5)
 
 
 //-----------------common-classes------------------
 
-.bg-primary
+@mixin bg-primary
   background-color: $color-primary
 
-.bg-primary-75
+@mixin bg-primary-90
+  background-color: $color-primary-90
+
+@mixin bg-primary-75
   background-color: $color-primary-75
 
-.bg-primary-50
+@mixin bg-primary-50
   background-color: $color-primary-50
 
-.bg-secondary
+@mixin bg-secondary
   background-color: $color-secondary
 
-.bg-secondary-75
+@mixin bg-secondary-75
   background-color: $color-secondary-75
 
-.bg-secondary-50
+@mixin bg-secondary-50
   background-color: $color-secondary-50
 
-.bg-passive
+@mixin bg-passive
   background-color: $color-passive
 
-.bg-passive-75
+@mixin bg-passive-90
+  background-color: $color-passive-90
+
+@mixin bg-passive-75
   background-color: $color-passive-75
 
-.bg-passive-50
+@mixin bg-passive-50
   background-color: $color-passive-50
 
-.text-primary
+@mixin text-primary
   color: $color-primary
 
-.text-secondary
+@mixin text-secondary
   color: $color-secondary
 
-.text-passive
+@mixin text-passive
   color: $color-passive
+
+@mixin no-space
+  margin: 0
+  padding: 0
 
 
 //--------------------mixins-----------------------
@@ -59,9 +71,14 @@ $color-passive-50: rgba(0, 0, 0, 0.5)
   -o-transition: $seconds
 
 @mixin common-shadow()
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75)
-  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75)
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75)
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75)
+  -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75)
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75)
+
+@mixin light-shadow()
+  -webkit-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.75)
+  -moz-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.75)
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.75)
 
 @mixin absolute-center
   position: absolute
@@ -82,3 +99,25 @@ $color-passive-50: rgba(0, 0, 0, 0.5)
   flex-direction: column
   width: 100%
   min-height: 100vh
+
+@mixin overlay($color)
+  &:before
+    content: ""
+    width: 100%
+    height: 100%
+    z-index: 1
+    position: absolute
+    background-color: $color
+
+//-----------------global-styles---------------------
+body
+  background: url("../images/background.jpg") repeat
+
+
+a
+  +transition(0.3s)
+  +text-primary
+  &:hover
+    +transition(0.3s)
+    color: $color-secondary
+    text-decoration: none

@@ -1,0 +1,48 @@
+@import "global"
+
+.navbar
+  +no-space
+  position: fixed
+  width: 100%
+  z-index: 100
+  +common-shadow
+
+
+.navbar__top
+  +bg-passive
+  display: flex
+  width: 100%
+  justify-content: space-between
+  align-items: center
+  min-height: 75px
+  +bg-passive
+
+.navbar__top-logo
+  background: url("../images/logo-full.png") no-repeat center
+  background-size: contain
+  height: 75px
+  width: 385px
+  margin-left: 20px
+
+.navbar__top-info
+  margin-right: 20px
+
+
+.navbar__menu
+  +bg-primary-75
+  display: flex
+  justify-content: space-around
+  align-items: center
+  width: 100%
+  padding: 10px 0
+  +transition(0.3s)
+
+
+  &:hover
+    +bg-primary
+    +transition(0.3s)
+
+.navbar__menu-link
+  +text-passive
+  text-transform: uppercase
+
