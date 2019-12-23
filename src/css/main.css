@@ -556,12 +556,12 @@ a:hover {
   width: 100%;
 }
 
-.footer .col-4 {
+.footer .col-md-4 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .col-4:last-of-type {
+.footer .col-md-4:last-of-type {
   text-align: center;
 }
 
