@@ -836,21 +836,23 @@ a:hover {
   width: 100%;
 }
 
-.footer .col-md-4 {
+.footer .col-md-3, .footer .col-md-6 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .col-md-4:last-of-type {
+.footer .col-md-3:last-of-type, .footer .col-md-6:last-of-type {
   text-align: center;
 }
 
 .footer__menu {
   display: flex;
+  align-items: center;
 }
 
 .footer__menu-item {
   margin: 0 10px;
+  text-align: center;
 }
 
 .footer__logo {
