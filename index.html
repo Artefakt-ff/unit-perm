@@ -46,7 +46,55 @@
                 <div class="information__logo"></div>
                 <div class="information__employ">
                     <div class="title_small text_center">Хотите работать у нас?</div>
-                    <div class="btn btn-light information__employ-button">вакансии</div>
+                    <div class="btn btn-light information__employ-button" data-toggle="modal" data-target="#employ">
+                        вакансии
+                    </div>
+                    <div class="modal fade" id="employ" tabindex="-1" role="dialog"
+                         aria-labelledby="employModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="employModalLabel">Вакансии</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="list-group">
+                                        <a href="#"
+                                           class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-1">Старший разработчик</h5>
+                                                <small>IT-отдел</small>
+                                            </div>
+                                            <p class="mb-1 text-left">Требуется разработчик ПО для создания программ
+                                                поставки и
+                                                тд
+                                            </p>
+                                            <small>+7(962)316-08-16</small>
+                                        </a>
+                                        <a href="#"
+                                           class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-1">Старший разработчик</h5>
+                                                <small>IT-отдел</small>
+                                            </div>
+                                            <p class="mb-1 text-left">Требуется разработчик ПО для создания программ
+                                                поставки и
+                                                тд
+                                            </p>
+                                            <small>+7(962)316-08-16</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Закрыть
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="information__right col-md-6 col-sm-12">
@@ -239,7 +287,6 @@
         </div>
     </div>
     <div class="contacts_contact">
-
         <div class="contacts_contact-information text-right">
             <div class="title_medium">Производство</div>
             <div class="hr"></div>
@@ -260,26 +307,25 @@
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aecbab7eca5458520cc33e582d5e672f15615b2c6609c9f2dc91fee27f80e8288&amp;source=constructor"
                     width="750" height="250" frameborder="0"></iframe>
         </div>
+
     </div>
 </div>
 <div class="footer">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 col-sm-12">
-                <div class="footer__logo"></div>
+                <a href="#index" class="w-100">
+                    <div class="footer__logo"></div>
+                </a>
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="footer__menu">
-                    <a href="#" class="footer__menu-item">
+                    <a href="src/pages/events.html" class="footer__menu-item">
                         наши мероприятия
                     </a>
                     <div>|</div>
-                    <a href="#" class="footer__menu-item">
+                    <a href="#" class="footer__menu-item" data-toggle="modal" data-target="#employ">
                         вакансии
-                    </a>
-                    <div>|</div>
-                    <a href="#" class="footer__menu-item">
-                        задать вопрос
                     </a>
                 </div>
             </div>

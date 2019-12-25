@@ -1,0 +1,49 @@
+@import "global"
+
+.events
+  background-color: $color-primary
+  color: $color-passive
+  min-height: 100vh
+
+.events__event
+  padding-top: 75px
+
+.events__event-title
+  +common-shadow
+  position: relative
+  background: url("../images/events/event.jpg") no-repeat center
+  background-size: cover
+  padding: 20px
+
+  .overlay
+    +bg-primary-75
+
+  .title_medium, .text
+    position: relative
+    z-index: 2
+
+.events__event-body
+  .container
+    background: url("../images/background-transparent.png")
+    margin-top: 20px
+    width: 80%
+
+.events__event-body-text
+  margin-bottom: 20px
+
+.events__event-gallery
+  .row
+    justify-content: center
+
+  .col-md-3, .col-sm-12
+    display: flex
+    justify-content: center
+
+    img
+      max-width: 100%
+      margin: 20px 0
+      border-radius: 20px
+      +transition(0.4s)
+      &:hover
+        +light-shadow
+        +transition(0.4s)

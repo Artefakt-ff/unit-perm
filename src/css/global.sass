@@ -117,7 +117,26 @@ body
 a
   +transition(0.3s)
   +text-primary
+
   &:hover
     +transition(0.3s)
     color: $color-secondary
     text-decoration: none
+
+.top-button
+  position: fixed
+  z-index: 5
+  top: 40%
+  right: 5%
+  opacity: 0
+
+  img
+    width: 50px
+    height: 50px
+    +transition(0.3s)
+
+    &:hover
+      +transition(0.3s)
+      width: 55px
+      height: 55px
+
