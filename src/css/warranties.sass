@@ -1,22 +1,22 @@
 @import "global"
 
 .warranties
-  //+common-shadow
-  margin: 40px 0
+  height: 50vh
+  margin: 20px 0
 
-.warranties__right
-  +bg-primary
-  +text-passive
-  padding: 40px 20px
+  .container-fluid
+    height: 100%
+
+
+.warranties__block
+  height: 100%
 
 .warranties__diplomas
-  width: 100%
   height: 100%
   position: relative
 
 .warranties__diploma
   height: 100%
-  width: 100%
   display: flex
   +absolute-center
   z-index: 1
@@ -24,13 +24,13 @@
 
   &:nth-of-type(1)
     height: 80%
-    margin-left: 8vw
+    margin-left: 16vw
     background: url("../images/diploma-bottom0.jpg") no-repeat center
     background-size: contain
 
   &:nth-of-type(2)
     height: 80%
-    margin-right: 8vw
+    margin-right: 16vw
     background: url("../images/diploma-bottom1.jpg") no-repeat center
     background-size: contain
 

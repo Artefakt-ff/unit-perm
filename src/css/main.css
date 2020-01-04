@@ -42,6 +42,10 @@ a:hover {
   height: 55px;
 }
 
+.none {
+  display: none;
+}
+
 body {
   background: url("../images/background.jpg") repeat;
 }
@@ -84,6 +88,10 @@ a:hover {
   -o-transition: 0.3s;
   width: 55px;
   height: 55px;
+}
+
+.none {
+  display: none;
 }
 
 .title_small {
@@ -174,6 +182,10 @@ a:hover {
   height: 55px;
 }
 
+.none {
+  display: none;
+}
+
 .navbar {
   margin: 0;
   padding: 0;
@@ -237,6 +249,50 @@ a:hover {
   text-transform: uppercase;
 }
 
+.navbar__choice {
+  width: 100%;
+  display: flex;
+}
+
+.navbar__choice-item {
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #151841;
+  color: #f4f7f7;
+  transition: 0.4s;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.navbar__choice-item:hover {
+  background-color: #f4f7f7;
+  color: #151841;
+  transition: 0.4s;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.navbar__choice_active {
+  background-color: #f4f7f7;
+  color: #151841;
+}
+
+.navbar__choice-charity {
+  border-right: 0.5px solid #f4f7f7;
+}
+
+.navbar__choice-guardianship {
+  border-left: 0.5px solid #f4f7f7;
+}
+
 body {
   background: url("../images/background.jpg") repeat;
 }
@@ -281,6 +337,10 @@ a:hover {
   height: 55px;
 }
 
+.none {
+  display: none;
+}
+
 .index {
   display: flex;
   flex-direction: column;
@@ -289,7 +349,6 @@ a:hover {
   display: flex;
   align-items: start;
   justify-content: center;
-  background: url("../images/index-background.jpg") no-repeat center;
   background-size: cover;
 }
 .index:before {
@@ -308,6 +367,23 @@ a:hover {
   margin-left: 10%;
 }
 
+.carousel img {
+  height: 100vh;
+}
+
+.carousel-caption {
+  display: flex;
+}
+
+.carousel-inner h5 {
+  text-align: left;
+  font-size: 32px;
+}
+.carousel-inner p {
+  text-align: left;
+  font-size: 20px;
+}
+
 body {
   background: url("../images/background.jpg") repeat;
 }
@@ -350,6 +426,10 @@ a:hover {
   -o-transition: 0.3s;
   width: 55px;
   height: 55px;
+}
+
+.none {
+  display: none;
 }
 
 .information__left {
@@ -438,6 +518,10 @@ a:hover {
   height: 55px;
 }
 
+.none {
+  display: none;
+}
+
 .production {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
@@ -490,6 +574,10 @@ a:hover {
   -o-transition: 0.3s;
   width: 55px;
   height: 55px;
+}
+
+.none {
+  display: none;
 }
 
 .partners__left {
@@ -597,6 +685,10 @@ a:hover {
   height: 55px;
 }
 
+.none {
+  display: none;
+}
+
 .delivery {
   display: flex;
   flex-direction: column;
@@ -665,25 +757,29 @@ a:hover {
   height: 55px;
 }
 
-.warranties {
-  margin: 40px 0;
+.none {
+  display: none;
 }
 
-.warranties__right {
-  background-color: #151841;
-  color: #f4f7f7;
-  padding: 40px 20px;
+.warranties {
+  height: 50vh;
+  margin: 20px 0;
+}
+.warranties .container-fluid {
+  height: 100%;
+}
+
+.warranties__block {
+  height: 100%;
 }
 
 .warranties__diplomas {
-  width: 100%;
   height: 100%;
   position: relative;
 }
 
 .warranties__diploma {
   height: 100%;
-  width: 100%;
   display: flex;
   position: absolute;
   margin: auto;
@@ -695,13 +791,13 @@ a:hover {
 }
 .warranties__diploma:nth-of-type(1) {
   height: 80%;
-  margin-left: 8vw;
+  margin-left: 16vw;
   background: url("../images/diploma-bottom0.jpg") no-repeat center;
   background-size: contain;
 }
 .warranties__diploma:nth-of-type(2) {
   height: 80%;
-  margin-right: 8vw;
+  margin-right: 16vw;
   background: url("../images/diploma-bottom1.jpg") no-repeat center;
   background-size: contain;
 }
@@ -753,6 +849,10 @@ a:hover {
   -o-transition: 0.3s;
   width: 55px;
   height: 55px;
+}
+
+.none {
+  display: none;
 }
 
 .contacts {
@@ -825,6 +925,10 @@ a:hover {
   height: 55px;
 }
 
+.none {
+  display: none;
+}
+
 .footer {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
@@ -836,12 +940,12 @@ a:hover {
   width: 100%;
 }
 
-.footer .col-md-3, .footer .col-md-6 {
+.footer .col-md-3, .footer .col-md-6, .footer .col-md-4, .footer .col-sm-12 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .col-md-3:last-of-type, .footer .col-md-6:last-of-type {
+.footer:last-of-type {
   text-align: center;
 }
 
@@ -855,12 +959,23 @@ a:hover {
   text-align: center;
 }
 
+.footer__menu-item_active {
+  color: grey;
+}
+.footer__menu-item_active:hover {
+  color: grey !important;
+}
+
 .footer__logo {
   margin: 20px 0;
   background: url("../images/logo-full.png") no-repeat center;
   background-size: contain;
   height: 50px;
   width: 100%;
+}
+
+.footer__copyrights {
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -941,6 +1056,10 @@ a:hover {
   height: 55px;
 }
 
+.none {
+  display: none;
+}
+
 .events {
   background-color: #151841;
   color: #f4f7f7;
@@ -951,12 +1070,23 @@ a:hover {
   padding-top: 75px;
 }
 
+.inclusia-na-stile {
+  background: url("../images/events/inclusia_na_stile/0.jpg") no-repeat center;
+}
+
+.elovskay-rybka {
+  background: url("../images/events/event.jpg") no-repeat center;
+}
+
+.detskaya-comanda {
+  background: url("../images/guardianship/0.jpg") no-repeat center;
+}
+
 .events__event-title {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
   position: relative;
-  background: url("../images/events/event.jpg") no-repeat center;
   background-size: cover;
   padding: 20px;
 }
@@ -1002,6 +1132,10 @@ a:hover {
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
+}
+
+.charity__event {
+  padding-top: 100px !important;
 }
 
 /*# sourceMappingURL=main.css.map */

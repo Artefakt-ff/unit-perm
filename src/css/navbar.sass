@@ -50,3 +50,45 @@
   +text-passive
   text-transform: uppercase
 
+
+.navbar__choice
+  width: 100%
+  display: flex
+  //+common-shadow
+
+
+.navbar__choice-item
+  padding: 10px 0
+  width: 100%
+  display: flex
+  text-align: center
+  align-items: center
+  justify-content: center
+  height: 100%
+  background-color: $color-primary
+  color: $color-passive
+  +transition(0.4s)
+  text-transform: uppercase
+  cursor: pointer
+
+  &:hover
+    background-color: $color-passive
+    color: $color-primary
+    +transition(0.4s)
+
+
+.navbar__choice_active
+  background-color: $color-passive
+  color: $color-primary
+
+
+.navbar__choice-charity
+  border-right: 0.5px solid $color-passive
+
+
+.navbar__choice-guardianship
+  border-left: 0.5px solid $color-passive
+
+
+
+

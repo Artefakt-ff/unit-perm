@@ -7,10 +7,11 @@
   align-items: center
   width: 100%
 
-.footer .col-md-3, .footer .col-md-6
-  display: flex
-  justify-content: center
-  align-items: center
+.footer
+  .col-md-3, .col-md-6, .col-md-4, .col-sm-12
+    display: flex
+    justify-content: center
+    align-items: center
 
   &:last-of-type
     text-align: center
@@ -24,9 +25,20 @@
   margin: 0 10px
   text-align: center
 
+
+.footer__menu-item_active
+  color: grey
+
+  &:hover
+    color: grey !important
+
 .footer__logo
   margin: 20px 0
   background: url("../images/logo-full.png") no-repeat center
   background-size: contain
   height: 50px
   width: 100%
+
+
+.footer__copyrights
+  text-align: center
