@@ -18,3 +18,16 @@ document.addEventListener('scroll', function (e) {
         topButton.css('opacity', 1);
     }
 });
+
+
+const navbar = document.querySelector('.navbar');
+let prevScrollValue = window.pageYOffset;
+
+window.addEventListener('scroll', () => {
+    if (prevScrollValue < window.pageYOffset) {
+        navbar.style.top = '-75px';
+        prevScrollValue = window.pageYOffset;
+    } else {
+        navbar.style.top = '0';
+    }
+}, {'passive': true});

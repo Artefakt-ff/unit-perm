@@ -1,11 +1,35 @@
 @import "global"
 .index
   +screen
-  +overlay($color-primary-50)
-  display: flex
-  align-items: start
-  justify-content: center
-  background-size: cover
+  //+overlay($color-primary-50)
+  //display: flex
+  //align-items: start
+  //justify-content: center
+  //background-size: cover
+  position: relative
+  overflow: hidden
+
+
+
+
+.index__video_background
+  background: #FFF
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: -99
+
+
+.index__video_foreground,
+.index__video_background iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  pointer-events: none
 
 .index__text
   z-index: 1
@@ -19,7 +43,6 @@
     height: 100vh
 
 
-
 .carousel-caption
   display: flex
 
@@ -29,7 +52,41 @@
     text-align: left
 
     font-size: 32px
+
   p
     text-align: left
 
     font-size: 20px
+
+
+.index__video
+  z-index: -999
+  overflow: hidden
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+iframe
+  overflow: hidden
+  width: 100%
+  height: 100%
+
+
+@media (min-aspect-ratio: 16/9)
+  .index__video
+    height: 300%
+    top: -100%
+
+
+@media (max-aspect-ratio: 16/9)
+  .index__video
+    width: 300%
+    left: -100%
