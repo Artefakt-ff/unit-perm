@@ -906,6 +906,7 @@ a:hover {
 }
 
 .contacts {
+  color: #f4f7f7;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -920,6 +921,11 @@ a:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.contacts_contact-map {
+  width: 50%;
+  height: 250px;
 }
 
 .contacts_contact-information {
