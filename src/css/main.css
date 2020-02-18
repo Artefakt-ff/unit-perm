@@ -581,6 +581,9 @@ a:hover {
 .production .carousel, .production .carousel-inner {
   max-height: 60vh;
 }
+.production .carousel-item {
+  min-height: 60vh;
+}
 
 body {
   background: url("../images/background.jpg") repeat;
